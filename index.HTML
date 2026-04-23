@@ -23,24 +23,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 .card {
     max-width: 500px;
     width: 100%;
-    padding: 20px;
+    padding: 50px;
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 50px;
     align-content: center;
-    background-color: rgba(111, 109, 126, 0);
+    background-color: rgb(80, 69, 165);
     border-radius: 50px;
 }
 
 body{
-  background-image: url('https://img.freepik.com/premium-vector/geometric-gradient-technology-background_23-2149110132.jpg?semt=ais_hybrid&w=740&q=80');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgb(56, 56, 56);
 }
 
 
@@ -106,13 +104,12 @@ body{
       alert("Login form cleared.");
     });
 
-<script>
 function function_name(){
 
 do {
         
         if (username === "John" && password === "1039291") {
-            alert(Welcome back student "John"!);
+            alert('Welcome back student John!');
             attempt_counter = 0; // reset after success
             document.getElementById("checkftype").innerHTML = "";
             window.location.href = "notebook.html"; //go to second page
@@ -126,7 +123,7 @@ do {
     } while (false); 
 
     if (attempt_counter >= 3) {
-        alert("Time out mode due to too many failed corrects.);
+        alert('Time out mode due to too many failed corrects.');
         document.getElementById("checkftype").disabled = true; // lock button
     }
 }
