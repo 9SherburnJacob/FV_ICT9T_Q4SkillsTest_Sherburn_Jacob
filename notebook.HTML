@@ -134,14 +134,11 @@
   let subjects = Object.keys(dashboards);
 
   for (let i = 0; i < subjects.length; i++) {
-    let s = subjects[i];
-    let color = dashboards[s].color;
+// Checks if I is less than subjects.length and then adds one value to I until I and subjects.length are equal.
 
-    sideMenu.innerHTML += "<button class='side-btn' onclick='openSubject(\"" + s + "\")'>" + s + "</button>";
-    mainGrid.innerHTML += "<div class='subject-card' style='border-bottom: 5px solid " + color + "' onclick='openSubject(\"" + s + "\")'>" + s + "</div>";
+    sideMenu.innerHTML += "<button class='side-btn' onclick='openSubject(\"" + s + "\")'>" + s + "</button>"; // Adds a button to the sidebar. 
+    mainGrid.innerHTML += "<div class='subject-card' style='border-bottom: 5px solid " + color + "' onclick='openSubject(\"" + s + "\")'>" + s + "</div>"; // Generates main cards for the notebooks
   }
-
-//
 
   function openSubject(name) {
     alert("The server cannot be reached right now. Please try again later.");
