@@ -127,10 +127,12 @@
     Business: { color: "gold" }
   };
 
+// Notebook color palette.
+
   let sideMenu = document.getElementById("sideMenu");
   let mainGrid = document.getElementById("mainGrid");
   let subjects = Object.keys(dashboards);
-  
+
   for (let i = 0; i < subjects.length; i++) {
     let s = subjects[i];
     let color = dashboards[s].color;
@@ -139,9 +141,12 @@
     mainGrid.innerHTML += "<div class='subject-card' style='border-bottom: 5px solid " + color + "' onclick='openSubject(\"" + s + "\")'>" + s + "</div>";
   }
 
+
+
   function openSubject(name) {
     alert("The server cannot be reached right now. Please try again later.");
   }
+//appears for when you select a notebook.
 </script>
 
 </body>
